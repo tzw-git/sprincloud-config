@@ -1,0 +1,17 @@
+server:
+  port: 3344
+spring:
+  application:
+    name: cloud-config-center
+  cloud:
+    config:
+      server:
+        git:
+          uri: git@github.com:tzw-git/sprincloud-config.git  #填写你自己的github路径
+          search-paths:
+            - sprincloud-config           #仓库名
+          default-label: master
+eureka:
+  client:
+    service-url:
+      defaultZone: http://eureka7003.com:7003/eureka/
