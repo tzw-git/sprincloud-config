@@ -7,7 +7,7 @@ spring:
     config:
       server:
         git:
-          uri: git@github.com:tzw-git/sprincloud-config.git  #填写你自己的github路径
+          uri: https://github.com/tzw-git/sprincloud-config.git  #填写你自己的github路径
           search-paths:
             - sprincloud-config           #仓库名
           default-label: master
